@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Anton&family=Bebas+Neue&family=Lobster&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+header {
+  background-image: linear-gradient(90deg, #c83649 , #a52c3c, #c83649);
+  color: white;
+  text-align: center;
+  padding: 1% 0;
+  width: 100%;
+}
+
+header h1{
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  padding-top: 20px;
+  letter-spacing: 20px;
+}
+
+header p{
+  letter-spacing: 2px;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+a{
+  font-family: 'Alexandria', sans-serif;
+  letter-spacing: 2px;
+}
+
+main{
+  background-image: linear-gradient(90deg, #e2b9b311, #b4938e41, #e2b9b311);
+  background-color: #e2b9b321;
+  padding: 0 2% 2% 2%;
+
+  /* border: 1px solid green; */
+}
+
+footer{
+  background-image: linear-gradient(90deg, #c83649 , #a52c3c, #c83649);
+  letter-spacing: 3px;
+  height: 60px;
+}
+
+footer p{
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 600;
+  color: black;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+footer a img{
+  float: right;
+  height: 40px;
+  margin-right: 20px;
+  transform: rotate(180deg);
+  margin-top: 10px;
+}
+
+.c-jc{
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  padding: 1.5% 1.5%;
+
+  margin-bottom: 30;
+
+  /* border: 1px solid black; */
+}
+
+.c-jc div{
+  /* display: none; */
+  height: 35px; /* 120px */
+  transition-property: transform,margin;
+  transition-duration: 0.6s, 0.6s;
+  transition-timing-function: cubic-bezier(.96,.03,.79,.83);
+  margin-top: 85px;
+}
+
+.c-jc h2{
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #c8364936 , #b4314323, #c8364936);
+
+}
+
+.c-jc p {
+  font-family: 'Alexandria', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px;
+  background-image: linear-gradient(90deg, #c8364936 , #b4314323, #c8364936);
+}
+
+.c-jc img{
+  object-fit:fill;
+  width: 100%;
+  height: 300px;
+  margin-left: -1px;
+
+  filter: blur(1.5px);
+  transition-property: filter, transform, box-shadow;
+  transition-duration: 0.65s, 0.6s, 0.6s; 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.068),
+   0 3px 10px 0 rgba(0, 0, 0, 0.075);
+}
+
+.c-jc a{
+
+  border-radius: 20px;
+  position: relative;
+  background-image: linear-gradient(#c83649 40%, #a52c3c);
+  display: inline-block;
+  margin: 35px 0 10px 23%;
+  padding: 10px 70px;
+  text-decoration: none;
+  color: white;
+
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(.72,.4,0,1.54);
+
+  box-shadow:  0 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.c-jc a:hover {
+  transform: scale(1.05);
+}
+
+
+.c-jc:hover img{
+  filter: blur(0);
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.212);
+}
+
+.c-jc:hover div{
+  transform: translateY(-85px);
+}
