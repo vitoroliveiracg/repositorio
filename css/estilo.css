@@ -43,6 +43,7 @@ main{
   background-image: linear-gradient(90deg, #e2b9b311, #b4938e41, #e2b9b311);
   background-color: #e2b9b321;
   padding: 0 2% 2% 2%;
+  min-height: 700px;
 
   /* border: 1px solid green; */
 }
@@ -50,7 +51,7 @@ main{
 footer{
   background-image: linear-gradient(90deg, #c83649 , #a52c3c, #c83649);
   letter-spacing: 3px;
-  height: 60px;
+  height: 55px;
 }
 
 footer p{
@@ -70,18 +71,9 @@ footer a img{
   margin-top: 10px;
 }
 
-.c-jc{
-  position: relative;
-  display: inline-block;
-  width: 33%;
-  padding: 1.5% 1.5%;
 
-  margin-bottom: 30;
 
-  /* border: 1px solid black; */
-}
-
-.c-jc div{
+.c-jc .titulo-descricao{
   /* display: none; */
   height: 35px; /* 120px */
   transition-property: transform,margin;
@@ -123,14 +115,20 @@ footer a img{
    0 3px 10px 0 rgba(0, 0, 0, 0.075);
 }
 
+.c-jc .link-conteiner{
+  display: flex;
+  justify-content: center;
+}
+
 .c-jc a{
 
   border-radius: 20px;
-  position: relative;
+  /* position: relative; */
   background-image: linear-gradient(#c83649 40%, #a52c3c);
   display: inline-block;
-  margin: 35px 0 10px 23%;
-  padding: 10px 70px;
+  margin: 25px 0;
+  /* margin: 35px 0 10px 23%; */
+  padding: 10px 20% /*70px*/;
   text-decoration: none;
   color: white;
 
@@ -139,6 +137,56 @@ footer a img{
   transition-timing-function: cubic-bezier(.72,.4,0,1.54);
 
   box-shadow:  0 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .c-jc{
+    position: relative;
+    display: inline-block;
+    width: 99.9%;
+    padding: 1.5% 1.5%;
+  
+    margin-bottom: 30;
+  
+    /* border: 1px solid black; */
+  }
+}
+
+/*Tablets e Smartphones + largos, 700px para cima) */
+@media only screen and (min-width: 550px) {
+
+  .c-jc{
+    position: relative;
+    display: inline-block;
+    width: 49.5%;
+    padding: 1.5% 1.5%;
+  
+    margin-bottom: 30;
+  
+    /* border: 1px solid black; */
+  }
+
+}
+
+
+/* Dispostivos Largos (laptops/desktops, 1080px para cima) */
+@media only screen and (min-width: 1080px) {
+
+  .c-jc{
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    padding: 1.5% 1.5%;
+  
+    margin-bottom: 30;
+  
+    /* border: 1px solid black; */
+  }
+
 }
 
 .c-jc a:hover {
@@ -152,6 +200,6 @@ footer a img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.212);
 }
 
-.c-jc:hover div{
+.c-jc:hover .titulo-descricao{
   transform: translateY(-85px);
 }
